@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    max-width: 600px;
+    padding: 20px;
+    min-height: 100vh;
+    border: 2px solid green;
+}
+
+header{
+    text-align: center;
+    color: purple;
+    margin-bottom: 2px;
+
+}   
+
+.search-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 15px;
+    height: max-content;
+}
+
+.city-input{
+    padding: 15px;
+    font-size: 10px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    /*transition: border-color 0.3s ease*/;
+}
+
+.city-input:focus{
+    background-color: #3458db24;
+}
+
+.search-btn{
+    padding: 11px 20px;
+    font-size: 1.2rem;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease
+}
+
+.search-btn:hover{
+    background-color: cadetblue;
+}
+
+.search-btn:active{
+    transform: translateY(1px);
+}
