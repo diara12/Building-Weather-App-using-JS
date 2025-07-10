@@ -7,30 +7,57 @@
     <title>Weather App</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Weather App</h1>
-            <p>Get the current Weather of Any State</p>
-        </header>
-        <br>
-        <br>
-        <br>
-        <div class="search-section">
-            <input type="text" name="cityInput" id="cityInput" placeholder="Enter city name" class="city-input">
+    <div class="main-wrapper">
+        <div class="container">
+            <header>
+                <h1>Weather App</h1>
+                <p>Get the current Weather of Any State</p>
+            </header>
+            <br>
+            <br>
+            <br>
+            <div class="search-section">
+                <input type="text" name="cityInput" id="cityInput" placeholder="Enter city name" class="city-input">
+            <button id="searchbtn" class="search-btn">
+                Get Weather
+            </button>
+            </div>
+            <p id="loading" class="loading hidden">Loading weather data....</p>
         </div>
-        <button id="searchbtn" class="search-btn">
-            Search
-        </button>
-        <div id="error" class="error">
 
+        <div id="error" class="error hidden">
+            <p id="errorMessage"></p>
         </div>
-        <div id="weatherDisplay" class="weather-display hidden">
+
+        <div id = "weatherDisplay" class="weather-display hidden">
             <h2 id="cityName"></h2>
-            <!-- weather info div-->
-             <div>
-                
-             </div>
-        </div> 
+
+            <div class="weather-info">
+                <div class="temperature">
+                    <span id="temperature"></span>
+                    <span class="unit">°C</span>
+                </div>
+                <div class="description">
+                    <p id="weatherDescription"></p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="label">Feels like:</span>
+                    <span id="feelsLike"></span>°C
+                </div>
+                <div class="detail-item">
+                    <span class="label">Humidity:</span>
+                    <span id="humidity"></span>%
+                </div>
+                <div class="detail-item">
+                    <span class="label">Wind Speed:</span>
+                    <span id="windSpeed"></span>m/s
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
