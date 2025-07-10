@@ -1,4 +1,4 @@
-const API_KEY = "97f3fdea9bfb328f4cb5f9ac1f38e9f4"
+
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 //Fetching html elements
